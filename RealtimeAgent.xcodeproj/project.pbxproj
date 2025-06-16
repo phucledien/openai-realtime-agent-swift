@@ -6,14 +6,38 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		08578E632DFD8BE100669D80 /* Features in Frameworks */ = {isa = PBXBuildFile; productRef = 08578E622DFD8BE100669D80 /* Features */; };
+		08578E652DFD8BE100669D80 /* Model in Frameworks */ = {isa = PBXBuildFile; productRef = 08578E642DFD8BE100669D80 /* Model */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		08578E4D2DFD8AAA00669D80 /* RealtimeAgent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RealtimeAgent.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		08578E5F2DFD8B7C00669D80 /* Exceptions for "Packages" folder in "RealtimeAgent" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Features,
+				Model,
+			);
+			target = 08578E4C2DFD8AAA00669D80 /* RealtimeAgent */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		08578E4F2DFD8AAA00669D80 /* RealtimeAgent */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = RealtimeAgent;
+			sourceTree = "<group>";
+		};
+		08578E5D2DFD8B4100669D80 /* Packages */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				08578E5F2DFD8B7C00669D80 /* Exceptions for "Packages" folder in "RealtimeAgent" target */,
+			);
+			path = Packages;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -23,6 +47,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08578E652DFD8BE100669D80 /* Model in Frameworks */,
+				08578E632DFD8BE100669D80 /* Features in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -32,7 +58,9 @@
 		08578E442DFD8AAA00669D80 = {
 			isa = PBXGroup;
 			children = (
+				08578E5D2DFD8B4100669D80 /* Packages */,
 				08578E4F2DFD8AAA00669D80 /* RealtimeAgent */,
+				08578E612DFD8BE100669D80 /* Frameworks */,
 				08578E4E2DFD8AAA00669D80 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +71,13 @@
 				08578E4D2DFD8AAA00669D80 /* RealtimeAgent.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		08578E612DFD8BE100669D80 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -62,9 +97,12 @@
 			);
 			fileSystemSynchronizedGroups = (
 				08578E4F2DFD8AAA00669D80 /* RealtimeAgent */,
+				08578E5D2DFD8B4100669D80 /* Packages */,
 			);
 			name = RealtimeAgent;
 			packageProductDependencies = (
+				08578E622DFD8BE100669D80 /* Features */,
+				08578E642DFD8BE100669D80 /* Model */,
 			);
 			productName = RealtimeAgent;
 			productReference = 08578E4D2DFD8AAA00669D80 /* RealtimeAgent.app */;
@@ -341,6 +379,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		08578E622DFD8BE100669D80 /* Features */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Features;
+		};
+		08578E642DFD8BE100669D80 /* Model */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Model;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 08578E452DFD8AAA00669D80 /* Project object */;
 }
